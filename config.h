@@ -67,10 +67,10 @@ static const struct arg args[] = {
 	/* function       format            argument */
 	{ username,       " %s@",           NULL          },
 	{ hostname,       "%s | ",          NULL          },
-	{ ipv4,           "wlp15s0: %s | ", "wlp15s0"     },
-	{ ipv4,           "enp14s0: %s | ", "enp14s0"     },
-	{ kernel_release, "kernel: %s | ",  NULL          },
-	{ vol_perc,       "vol: %s% | ",    "/dev/mixer1" },
+	{ ipv4,           "wlan: %s | ", "wlp15s0"     },
+	{ ipv4,           "eth: %s | ", "enp14s0"     },
+	{ kernel_release, "linux-%s | ",  NULL          },
+	/* { vol_perc,       "vol: %s% | ",    "/dev/mixer1" }, */
 	{ ram_used,       "mem: %sB | ",    NULL          },
 	{ cpu_perc,       "cpu: %s% | ",    NULL          },
 	{ datetime,       "%s ",            "%F %T"       },
